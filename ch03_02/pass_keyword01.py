@@ -9,7 +9,9 @@ number = int(number)
 # 조건문 사용
 if(number>0):
     # 양수일 때: 아직 미구현 상태입니다
-    pass
+    # pass
+    raise NotImplementedError
 else:
     # 음수일 떄: 아직 미구현 상태입니다
-    pass
+    # pass
+    raise NotImplementedError
