@@ -30,3 +30,27 @@
 #         print("{}는 2 자릿수입니다.".format(number))
 #     elif 1<=number<=9:
 #         print("{}는 1 자릿수입니다.".format(number))
+
+# -----------
+
+# list_of_list = [
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [8, 9]
+# ]
+
+# for element in list_of_list:
+#     for element_of_element in element:
+#         print(element_of_element)
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+output = [[], [], []]
+
+
+for number in numbers:
+    output[(number-1)%3].append(number) 
+print(output)
+
+# 나머지 구할때 앞에 숫자가 뒤에 숫자보다 작으면 그 숫자 그대로 나온다.
+# ex) 1 % 3 == 1
+# ex) 0 % 3 == 0
