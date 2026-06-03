@@ -39,14 +39,39 @@
 
 # ---
 
-example_list = ["요소A", "요소B", "요소C"]
-i = 0
+# example_list = ["요소A", "요소B", "요소C"]
+# i = 0
 
-for item in example_list:
-    print("{}번째 요소는 {}입니다.".format(i, example_list))
-    i+=1
+# for item in example_list:
+#     print("{}번째 요소는 {}입니다.".format(i, example_list))
+#     i+=1
 
-print()
+# print()
 
-for i in range(len(example_list)):
-    print("{}번째 요소는 {}입니다.".format(i, example_list))
+# for i in range(len(example_list)):
+#     print("{}번째 요소는 {}입니다.".format(i, example_list))
+
+# ---    
+
+# sample_list = [1, 3, 4, 5]
+
+# print(sample_list.enumerate())
+
+# sample_dict = {
+#     "name": "디티오",
+#     "class": "인파이터"
+# }
+
+# print(items(sample_dict))
+
+# 리스트 내포 --> 리스트 이름 = [ 표현식 for 반복자 in 반복할 수 있는 것 if 조건문 ]
+# 리스트에서 특정 문자열이 포함된 것만 출력하고 싶을때 count 함수 사용 
+output = [numbers_with_one_zero_in_binary for numbers_with_one_zero_in_binary in range(1, 101) 
+          if "{:b}".format(numbers_with_one_zero_in_binary).count("0") == 1] 
+
+for i in output:
+    print("{} : {}".format(i, "{:b}".format(i)))
+print("합계:", sum(output))
+
+# for i in range(1, 101):
+#     print(i)
